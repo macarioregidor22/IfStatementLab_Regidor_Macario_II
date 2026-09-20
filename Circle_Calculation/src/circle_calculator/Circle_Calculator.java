@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package circle_calculator;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Regidor
+ */
+public class Circle_Calculator {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the radius of a circle");
+        double radius = input.nextDouble();
+
+        if (radius <= 0) {
+            System.out.println("Invalid radius.");
+        } else {
+            double area = Math.PI * Math.pow(radius, 2);
+            double circumference = 2 * Math.PI * radius;
+            System.out.println("Area: " + area);
+            System.out.println("Circumference: " + circumference);
+
+        }
+    }
+}
